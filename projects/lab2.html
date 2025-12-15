@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 2 | Callum Wilson</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Callum Wilson</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <section class="p-4 p-md-5 bg-light rounded-4 border">
+      <h1 class="mb-1">Electric Atlas: A Hendrix-Inspired Basemap</h1>
+      <div class="text-muted mb-3">Mapbox Studio Styled Basemap</div>
+
+      <p class="mb-4">
+        This project aims to bring back a creative and artistic element to cartography, which has become more focused on function over form ever since web mapping was introduced. 
+        The design for this basemap was inspired by Jimi Hendrix and 1960’s psychedelic art. Using bold colors, wavy textures, abstract symbols, and bubbly typefaces to embody the 
+        aesthetic of album covers and posters from the late 60’s and early 70’s, all while maintaining functionality. Parks and natural areas symbolized with the tree icon, while 
+        arts and music vanues are symbolized with the eye icon.
+    </section>
+
+    <section class="mt-4 project-hero border p-3">
+      <div class="ratio ratio-16x9">
+        <iframe
+          src="https://api.mapbox.com/styles/v1/calwlsn/cmhvkxbau007k01scg66ba3gk.html?title=false&access_token=pk.eyJ1IjoiY2Fsd2xzbiIsImEiOiJjbWhqbW83bWYxM2czMmtwdDE3Nno4cnA4In0.rmlYfXccVvt7jnv6F25C7Q&zoomwheel=false#5.41/46.916/-120.299"
+          title="Lab 2 style"
+          style="border:none;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <footer class="footer mt-4 border-top">
+      <div class="pt-3">
+        © <span id="year"></span> Callum Wilson
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
